@@ -33,17 +33,17 @@
 			if(IsSet($_SESSION["user_id"])) {
 				$id=$_SESSION["user_id"];
 				$query="select * from messages where receiver_id=".$id." order by id desc";
-				$res_id=MySQLi_Connect('localhost','root','@connectme','shangout');
+				$resid=MySQLi_Connect('localhost','root','@connectme','shangout');
 				
 				if(MySQLi_Connect_Errno()) {
 					echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
 				}
 				else {
-				$result=MySQLi_Query($res_id,$query);
+				$result=MySQLi_Query($resid,$query);
 				$data=MySQLi_Fetch_Row($result);
 				if($data) {
 				$query="select name,email from students where id=".$data[1]."";
-				$sender=MySQLi_Query($res_id,$query);
+				$sender=MySQLi_Query($resid,$query);
 				$sender=MySQLi_Fetch_Row($sender);
 				//if($data) {
 				 
@@ -56,7 +56,7 @@
 				else {
 				echo "<tr align='center'> <td colspan='5'> <font color='lightblue'> No Messages! </font> </td> </tr>";
 				}
-				MySQLi_Close($res_id);
+				MySQLi_Close($resid);
 				}
 			}
 			else {
@@ -70,6 +70,10 @@
 			&copy; All Rights Reserved.	
 			</footer>
 </body>
+<!-- 
+Original source: https://github.com/abhn/simple-php-mysql-project 
+Licensed under the MIT License
+-->
 </html>
 		
 		

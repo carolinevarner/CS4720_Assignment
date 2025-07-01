@@ -147,6 +147,10 @@
 			&copy; All Rights Reserved.	
 			</footer>
 </body>
+<!-- 
+Original source: https://github.com/abhn/simple-php-mysql-project 
+Licensed under the MIT License
+-->
 </html>		
 		
 		

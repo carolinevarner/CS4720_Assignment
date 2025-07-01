@@ -137,12 +137,12 @@
 			//$query="INSERT INTO studs VALUES('$name','$email',$age);";
 		//MySQL Magic :D
 			//Getting Resource ID
-			$res_id=MySQLi_Connect('localhost','root','@connectme','shangout');
+			$resid=MySQLi_Connect('localhost','root','@connectme','shangout');
 			if(MySQLi_Connect_Errno()) {
 				echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
 			}
 			else {
-			$check_email=MySQLi_Query($res_id,"select name from students where email='".$email."'");
+			$check_email=MySQLi_Query($resid,"select name from students where email='".$email."'");
 			$r_email=MySQLi_Fetch_Row($check_email);
 			
 			if($r_email) {
@@ -150,7 +150,7 @@
 			}
 			
 			else {
-			$count=MySQLi_Query($res_id,"select (max(id)+1) as count  from students");
+			$count=MySQLi_Query($resid,"select (max(id)+1) as count  from students");
 			$count_id=MySQLi_Fetch_Assoc($count);
 			if($count_id["count"]) {
 				$query="insert into students values (".$count_id["count"].",'$name','$email',$age,'$gender','$password')";
@@ -158,7 +158,7 @@
 			else {
 				$query="insert into students values (1,'$name','$email',$age,'$gender','$password')";
 			}
-			$res=MySQLi_Query($res_id,$query);
+			$res=MySQLi_Query($resid,$query);
 			if($res) {
 			echo "<tr align='center'> <td colspan='5'> <font color='green'> Registration Successful! </font> You may login now from here:- <a href='login.php'>Login</a></td> </tr>";
 			}
@@ -166,7 +166,7 @@
 				echo "<tr align='center'> <td colspan='5'> <font color='red'> Registration Failed! </font> </td> </tr>";
 			}
 			}
-			MySQLi_Close($res_id);
+			MySQLi_Close($resid);
 			}
 			
 			
@@ -178,6 +178,10 @@
 			&copy; All Rights Reserved.	
 			</footer>
 </body>
+<!-- 
+Original source: https://github.com/abhn/simple-php-mysql-project 
+Licensed under the MIT License
+-->
 </html>
 
 

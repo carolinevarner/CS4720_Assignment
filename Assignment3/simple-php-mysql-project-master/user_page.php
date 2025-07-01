@@ -155,4 +155,8 @@
 			&copy; All Rights Reserved.	<?php if(isset($_SESSION["user_id"])) {echo $_SESSION["name"]; } ?>
 			</footer>
 </body>
+<!-- 
+Original source: https://github.com/abhn/simple-php-mysql-project 
+Licensed under the MIT License
+-->
 </html>
