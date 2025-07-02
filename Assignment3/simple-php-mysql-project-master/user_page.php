@@ -37,7 +37,7 @@
 			</tr>
 			
 			<?php
-			//Session_start();
+			Session_start();
 			$email=$password=$no_msg="";
 			
 			if(!isset($_SESSION['user_id']) && !isset($_POST['h1'])) {

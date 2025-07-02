@@ -66,7 +66,7 @@
 				<td> <hr> </td> 
 			</tr>
 			<?php
-			//Session_start();
+			Session_start();
 			if(IsSet($_SESSION["user_id"])) {
 			
 			

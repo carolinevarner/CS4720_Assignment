@@ -29,7 +29,7 @@
 			</tr>
 			
 			<?php
-			//Session_start();
+			Session_start();
 			if(IsSet($_SESSION["user_id"])) {
 						echo "<tr> <td colspan='5' align='center'> <table align='center'>
 							<tr  align='center'>

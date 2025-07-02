@@ -29,7 +29,7 @@
 			</tr>
 			
 			<?php
-			//Session_start();
+			Session_start();
 			if(IsSet($_SESSION["user_id"])) {
 				$id=$_SESSION["user_id"];
 				$query="select * from messages where receiver_id=".$id." order by id desc";
