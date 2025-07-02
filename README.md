@@ -60,6 +60,6 @@ All assignments are hosted on **KSU’s Linux server** (`10.96.50.55`):
 
 ---
 
-## 🔍 Notes  
+## Notes  
 - **Testing:** Fake emails (e.g., `test@test.com`) were used due to server limitations.  
 - **Permissions:** Set via `chmod 775` (directories) and `chmod 664` (files).  
