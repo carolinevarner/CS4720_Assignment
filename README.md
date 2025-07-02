@@ -1,6 +1,6 @@
 # CS 4720 - Internet Programming Assignments
 
-## 📌 Overview
+## Overview
 This repository contains my coursework for **CS 4720: Internet Programming** at Kennesaw State University. Assignments are deployed to a KSU-managed Linux server via WinSCP/PuTTY and include:  
 - **HTML/CSS/JavaScript** fundamentals  
 - **PHP/MySQL** backend development  
@@ -8,7 +8,7 @@ This repository contains my coursework for **CS 4720: Internet Programming** at 
 
 ---
 
-## 🛠️ Assignments
+## Assignments
 ### Assignment 1: Linux, HTML, CSS, JavaScript  
 - **Objective:** Set up a personal homepage using KSU branding.  
 - **Key Tasks:**  
@@ -43,7 +43,7 @@ This repository contains my coursework for **CS 4720: Internet Programming** at 
 
 ---
 
-## 🚀 Deployment  
+## Deployment  
 All assignments are hosted on **KSU’s Linux server** (`10.96.50.55`):  
 - **Access URLs:**  
   - Homepage: `http://10.96.50.55/netid`  
@@ -54,7 +54,7 @@ All assignments are hosted on **KSU’s Linux server** (`10.96.50.55`):
 
 ---
 
-## 📜 License  
+## License  
 - SMA is licensed under **MIT** (derived from [abhn/simple-php-mysql-project](https://github.com/abhn/simple-php-mysql-project)).  
 - Coursework © Caroline Varner, 2025.  
 
