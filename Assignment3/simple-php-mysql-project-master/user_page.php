@@ -41,7 +41,7 @@
 			$email=$password=$no_msg="";
 			
 			if(!isset($_SESSION['user_id']) && !isset($_POST['h1'])) {
-			 Header("Location: home.php");
+				Header("Location: home.php");
 			}
 			
 
