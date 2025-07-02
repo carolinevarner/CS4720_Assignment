@@ -1,12 +1,5 @@
 # CS 4720 - Internet Programming Assignments
 
-**Repository Owner:** Caroline Varner  
-**KSU Email:** carolinevarner04@gmail.com  
-**GitHub:** [github.com/carolinevarner](https://github.com/carolinevarner)  
-**LinkedIn:** [Caroline Varner](https://www.linkedin.com/in/carolinevarner)  
-
----
-
 ## 📌 Overview
 This repository contains my coursework for **CS 4720: Internet Programming** at Kennesaw State University. Assignments are deployed to a KSU-managed Linux server via WinSCP/PuTTY and include:  
 - **HTML/CSS/JavaScript** fundamentals  
