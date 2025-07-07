@@ -33,7 +33,8 @@
 			if(IsSet($_SESSION["user_id"])) {
 				$id=$_SESSION["user_id"];
 				$query="select * from messages where receiver_id=".$id." order by id desc";
-				$resid=MySQLi_Connect('localhost','root','@connectme','shangout');
+				//$resid=MySQLi_Connect('localhost','root','@connectme','shangout');
+				$resid=MySQLi_Connect("localhost", "cvarner5", "cvarner5", "cvarner5");
 				
 				if(MySQLi_Connect_Errno()) {
 					echo "<tr align='center'> <td colspan='5'> Failed to connect to MySQL </td> </tr>";
