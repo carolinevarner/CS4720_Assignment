@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<link rel='stylesheet' href='page_css.css'>
-	<title> Student's Hangout </title>
+	<link rel='stylesheet' href='css/devtalk.css'>
+	<title> DevTalk </title>
 	
 		<script src='jquery.js'></script>
 	<script type='text/javascript'>

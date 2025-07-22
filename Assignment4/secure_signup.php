@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<link rel='stylesheet' href='page_css.css'>
-	<title> Student's Hangout </title>
+	<link rel='stylesheet' href='css/devtalk.css'>
+	<title> DevTalk </title>
 	<script type='text/javascript'>
 		function sec() {
 			var name=document.f1.n1.value;
