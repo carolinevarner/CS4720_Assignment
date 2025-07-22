@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel='stylesheet' href='devtalk_ui.css'>
+	<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
 	<title> Student's Hangout </title>
 	<script type='text/javascript'>
 		function sec() {
