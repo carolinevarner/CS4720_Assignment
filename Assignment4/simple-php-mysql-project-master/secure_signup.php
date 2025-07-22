@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<link rel='stylesheet' href='css/devtalk.css'>
-	<title> DevTalk </title>
+	<link rel='stylesheet' href='devtalk_ui.css'>
+	<title> Student's Hangout </title>
 	<script type='text/javascript'>
 		function sec() {
 			var name=document.f1.n1.value;
@@ -64,6 +64,18 @@
 	</script>
 </head>
 <body>
+
+<nav>
+  <div class="logo"><strong>DevTalk</strong></div>
+  <ul>
+    <li><a href="home.php">Home</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="secure_signup.php">Sign-Up</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+  </ul>
+</nav>
+
 		<table cellpadding='3' cellspacing='3' class='tab_main'>
 			<!--Logo-->
 			<tr>

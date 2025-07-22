@@ -1,10 +1,22 @@
 <!doctype html>
 <html>
 <head>
-	<link rel='stylesheet' href='page_css.css'>
+	<link rel='stylesheet' href='devtalk_ui.css'>
 	<title> Student's Hangout </title>
 </head>
 <body>
+
+<nav>
+  <div class="logo"><strong>DevTalk</strong></div>
+  <ul>
+    <li><a href="home.php">Home</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="secure_signup.php">Sign-Up</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+  </ul>
+</nav>
+
 		<table cellpadding='3' cellspacing='3' class='tab_main'>
 			<!--Logo-->
 			<tr>
@@ -27,14 +39,23 @@
 				<td> <hr> </td> 
 			</tr>
 			
-			<tr align='center'>
-				<td colspan='5'> <h3> About-Us </h3> <br> We are Anonymous, We are Legion, <br> We do not forgive, We do not forget, <br> Expect us! </td> 
+			<tr>
+				
+				<td colspan='4'> 
+				<p> 
+					  <h3>Welcome to Socioexplore</h3>
+				</p>	
+				</td>
+				
 			</tr>
-			
-			
+
 		</table>
 			<footer align='center'>
-			&copy; All rights Reserved.	
+			&copy; All Rights Reserved.	
 			</footer>
 </body>
-</head>
+<!-- 
+Original source: https://github.com/abhn/simple-php-mysql-project 
+Licensed under the MIT License
+-->
+</html>
