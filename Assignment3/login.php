@@ -2,8 +2,6 @@
 <html>
 <head>
 	<link rel='stylesheet' href='page_css.css'>
-	<link rel='stylesheet' href='devtalk_ui.css'>
-	<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
 	<title> Student's Hangout </title>
 		<script type='text/javascript'>
 		function sec() {
@@ -50,20 +48,12 @@
 	</script>
 </head>
 <body>
-	<nav>
-  <div class="logo"><strong>DevTalk</strong></div>
-  <ul>
-    <li><a href="home.php">Home</a></li>
-    <li><a href="login.php">Login</a></li>
-    <li><a href="secure_signup.php">Sign-Up</a></li>
-    <li><a href="contact-us.html">Contact</a></li>
-    <li><a href="about-us.html">About Us</a></li>
-  </ul>
-</nav>
-		<!-- <table cellpadding='3' cellspacing='3' class='tab_main'>
+		<table cellpadding='3' cellspacing='3' class='tab_main'>
+			<!--Logo-->
 			<tr>
-				<td  colspan='5'><img src='images/logo.png' height='65%' width='100%' ></td> 
+				<td  colspan='5'><img src='images/logo.png' height='65%' width='100%' ></td> <!--1350x160-->
 			</tr>
+			<!--Nav_Tabs-->
 			<tr align='center' bgcolor='lightgrey' class='td_bor'>
 				<td width='5%'> <a href='home.php'> Home </a></td>
 				<td width='5%'> <a href='login.php'>Login </a></td>
@@ -79,7 +69,7 @@
 				<td> <hr> </td> 
 				<td> <hr> </td> 
 			</tr>
-			 -->
+			
 			<tr align='center'> 
 				<td colspan='5'>
 					<form method='POST' name='f1' action='user_page.php'>

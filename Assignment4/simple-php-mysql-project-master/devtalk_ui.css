@@ -2,9 +2,9 @@
 /* DevTalk UI Theme (Figma Inspired) */
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Ovo';
     background: #ffffff;
-    color: #2c3e50;
+    color: #000;
     margin: 0;
     padding: 0;
     animation: fadeInPage 1.2s ease-in;
@@ -17,6 +17,7 @@ body {
 
 /* Navigation Bar */
 nav {
+    font-family: 'Ovo';
     background: linear-gradient(to right, #ece9e6, #ffffff);
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     padding: 20px 50px;
@@ -50,6 +51,7 @@ nav li a:hover {
 
 /* Buttons */
 button, input[type='submit'] {
+    font-family: 'Ovo';
     background-color: #000;
     color: #fff;
     border: none;
@@ -61,12 +63,14 @@ button, input[type='submit'] {
 }
 
 button:active, input[type='submit']:active {
+    font-family: 'Ovo';
     background-color: #444;
     transform: scale(0.98);
 }
 
 /* Inputs & Forms */
 input[type="text"], input[type="email"], input[type="password"] {
+    font-family: 'Ovo';
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
@@ -76,6 +80,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 label {
+    font-family: 'Ovo';
     font-size: 14px;
     display: block;
     margin-bottom: 6px;
