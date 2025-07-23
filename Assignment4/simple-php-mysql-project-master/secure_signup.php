@@ -1,73 +1,122 @@
 <!doctype html>
 <html>
 <head>
-	<link rel='stylesheet' href='devtalk_ui.css'>
-	<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
-	<title> Student's Hangout </title>
-	<script type='text/javascript'>
-		function sec() {
-			var name=document.f1.n1.value;
-			var email=document.f1.e1.value;
-			var age=document.f1.a1.value;
-			var password=document.f1.p1.value;
-			
-			
-			if(name.length==0||email.length==0||age.length==0||password.length==0) {
-				
-				if(name.length==0) {
-				s1.innerHTML="<font color='red'>Field is Required</font>";
-				
-				}
-				
-				if(email.length==0) {
-				s2.innerHTML="<font color='red'>Field is Required</font>";
-				
-				}
-				
-				if(age.length==0) {
-				s3.innerHTML="<font color='red'>Field is Required</font>";
-				
-				}
-				
-				if(password.length==0) {
-				s4.innerHTML="<font color='red'>Field is Required</font>";
-				
-				}
-			}
-			
-			else if (name.length>50||email.length>50||password.length>50) {
-				
-				if(name.length>50) {
-				s5.innerHTML="<font color='red'>Characters should be less than 50 </font>";
-				
-				}
-				
-				if(email.length>50) {
-				s6.innerHTML="<font color='red'>Characters should be less than 50 </font>";
-				
-				}
-				
-				if(password.length>50) {
-				s7.innerHTML="<font color='red'>Characters should be less than 50 </font>";
-				
-				}
-			}
-			
-			else {
-				document.f1.submit();
-			}
-			
-			
-			
-						
-			
-		}
-	</script>
+    <link rel='stylesheet' href='devtalk_ui.css'>
+    <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+    <title>DevTalk - Sign Up</title>
+    <style>
+        .signup-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: white;
+        }
+        
+        .signup-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .signup-header h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+        
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .signup-btn:hover {
+            background-color: #777;
+        }
+        
+        .signup-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script type='text/javascript'>
+        function sec() {
+            var name=document.f1.n1.value;
+            var email=document.f1.e1.value;
+            var password=document.f1.p1.value;
+            
+            if(name.length==0||email.length==0||password.length==0) {
+                if(name.length==0) {
+                    s1.innerHTML="<font color='red'>Field is Required</font>";
+                }
+                
+                if(email.length==0) {
+                    s2.innerHTML="<font color='red'>Field is Required</font>";
+                }
+                
+                if(password.length==0) {
+                    s4.innerHTML="<font color='red'>Field is Required</font>";
+                }
+            }
+            else if (name.length>50||email.length>50||password.length>50) {
+                if(name.length>50) {
+                    s5.innerHTML="<font color='red'>Characters should be less than 50 </font>";
+                }
+                
+                if(email.length>50) {
+                    s6.innerHTML="<font color='red'>Characters should be less than 50 </font>";
+                }
+                
+                if(password.length>50) {
+                    s7.innerHTML="<font color='red'>Characters should be less than 50 </font>";
+                }
+            }
+            else {
+                document.f1.submit();
+            }
+        }
+    </script>
 </head>
 <body>
+<div class="fixed-logo"><strong>DevTalk</strong></div>
 
 <nav>
-  <div class="logo"><strong>DevTalk</strong></div>
   <ul>
     <li><a href="home.php">Home</a></li>
     <li><a href="login.php">Login</a></li>
@@ -77,58 +126,48 @@
   </ul>
 </nav>
 
-		<!-- <table cellpadding='3' cellspacing='3' class='tab_main'>
-			<tr>
-				<td  colspan='5'><img src='images/logo.png' height='65%' width='100%' ></td> 
-			</tr>
-			<tr align='center' bgcolor='lightgrey' class='td_bor'>
-				<td width='5%'> <a href='home.php'> Home </a></td>
-				<td width='5%'> <a href='login.php'>Login </a></td>
-				<td width='5%'> <a href='secure_signup.php'>Sign-up </a></td> 
-				<td width='5%'> <a href='contact-us.html'>Contact-Us </a></td>
-				<td width='5%'> <a href='about-us.html'>About-us </a></td>
-			</tr>
-			
-			<tr>
-				<td> <hr> </td> 
-				<td> <hr> </td> 
-				<td> <hr> </td> 
-				<td> <hr> </td> 
-				<td> <hr> </td> 
-			</tr>
-			 -->
-			<tr align='center'> 
-				<td colspan='5'>
-					<form method='POST' name='f1' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
-						<table>
-							<tr>
-								<td> Name:- </td> <td> <input type='text' name='n1' maxlength='50'> </td> <td> <span id='s1'> </span> </td> <td> <span id='s5'> </span> </td>
-							</tr>
-							<tr>
-								<td> Email:- </td> <td> <input type='email' name='e1' maxlength='50'> </td> <td> <span id='s2'> </span> </td> <td> <span id='s6'> </span> </td>
-							</tr>
-							<tr>
-								<td> Age:- </td> <td> <input type='number' name='a1' min='18' max='27'> </td> <td> <span id='s3'> </span> </td>
-							</tr>
-							<tr>
-							<td> Gender:- </td>  <td> <select name='g1'> 
-												<option value='M'>Male
-												<option value='F'>Female
-											  </select> </td>
-								</td>
-							</tr>
-							
-							<tr>
-								<td> Password:- </td> <td> <input type='password' name='p1' maxlength='50'> </td> <td> <span id='s4'> </span> </td> <td> <span id='s7'> </span> </td>
-							</tr>
-							
-							<tr>
-								<td> <br> <input type='button' value='Sign-up' name='s1' onclick='sec()'> </td> <td> <br> OR  <a href='login.php'>Login</a></td>
-							</tr>
-						</table>
-					</form>
-				</td>
-			</tr>
+<div class="signup-container">
+    <div class="signup-header">
+        <h2>Connect with other developers today!</h2>
+        <h1 style="text-align: center; font-size: 50px;">Sign Up</h1>
+    </div>
+    
+    <form method='POST' name='f1' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="n1">First name</label>
+                <input type='text' name='n1' id="n1" maxlength='50'>
+                <span id='s1'></span>
+                <span id='s5'></span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="e1">Email address</label>
+            <input type='email' name='e1' id="e1" maxlength='50'>
+            <span id='s2'></span>
+            <span id='s6'></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="p1">Create password</label>
+            <input type='password' name='p1' id="p1" maxlength='50'>
+            <span id='s4'></span>
+            <span id='s7'></span>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="notifications" name="notifications">
+            <label for="notifications">Receive Notifications</label>
+        </div>
+        
+        <button type='button' class="signup-btn" onclick='sec()'>Register</button>
+        
+        <div class="signup-footer">
+            Already have an account? <a href='login.php'>Login</a>
+        </div>
+    </form>
+</div>
 	<?php
 	
 	$name=$email=$age=$gender=$password=$count=$count_id="";
